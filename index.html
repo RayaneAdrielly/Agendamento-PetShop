@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento Petshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Agenda Petshop</h1>
+    <input type="date" id="data-agenda" />
+    
+  </header>
+
+  <main id="agenda">
+    <!-- Seções: Manhã, Tarde, Noite -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h2>Agende um atendimento</h2>
+      <form id="form-agendamento">
+        <input type="text" name="tutor" placeholder="Nome do tutor" required />
+        <input type="text" name="pet" placeholder="Nome do pet" required />
+        <input type="tel" name="telefone" placeholder="Telefone" required />
+        <input type="text" name="servico" placeholder="Descrição do serviço" required />
+        <input type="date" name="data" required />
+        <input type="time" name="hora" required />
+        <button type="submit">Agendar</button>
+        <button type="button" id="fechar-modal">Cancelar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
